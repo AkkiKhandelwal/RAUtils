@@ -16,11 +16,16 @@ import java.util.List;
 /**
  * Created by gwl on 18/12/17.
  */
-
 public class SudentAdapter extends RecyclerView.Adapter<SudentAdapter.StudentView> {
     private List<Student>  mList;
     private Context mContext;
 
+    /**
+     * Instantiates a new Sudent adapter.
+     *
+     * @param list    the list
+     * @param context the context
+     */
     public SudentAdapter(List<Student> list, Context context) {
         mList = list;
         mContext = context;
@@ -47,9 +52,18 @@ public class SudentAdapter extends RecyclerView.Adapter<SudentAdapter.StudentVie
         return mList.size();
     }
 
+    /**
+     * The type Student view.
+     */
     public class StudentView extends RecyclerView.ViewHolder {
         private TextView mTextView_name;
         private TextView mTextView_age;
+
+        /**
+         * Instantiates a new Student view.
+         *
+         * @param itemView the item view
+         */
         public StudentView(View itemView) {
             super(itemView);
             mTextView_name = itemView.findViewById(R.id.name_tv);

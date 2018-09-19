@@ -14,6 +14,10 @@ import com.iamakki.rautils.models.Student;
 import java.util.ArrayList;
 import java.util.List;
 
+
+/**
+ * The type Ra main activity.
+ */
 public class RAMainActivity extends AppCompatActivity implements View.OnClickListener  {
 
     private RecyclerView mRecyclerView;
